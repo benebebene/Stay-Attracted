@@ -14,13 +14,13 @@
 #/[Mm]emoryCaptures/
 
 
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Mm]emoryCaptures/
+test/[Ll]ibrary/
+test/[Tt]emp/
+test/[Oo]bj/
+test/[Bb]uild/
+test/[Bb]uilds/
+test/[Ll]ogs/
+test/[Mm]emoryCaptures/
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
