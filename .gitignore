@@ -3,13 +3,13 @@
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
 #*/[Ll]ibrary/
-/test/[Ll]ibrary/
-/test/[Tt]emp/
-/test/[Oo]bj/
-/test/[Bb]uild/
-/test/[Bb]uilds/
-/test/[Ll]ogs/
-/test/[Mm]emoryCaptures/
+#/test/[Ll]ibrary/
+#/test/[Tt]emp/
+#/test/[Oo]bj/
+#/test/[Bb]uild/
+#/test/[Bb]uilds/
+#/test/[Ll]ogs/
+#/test/[Mm]emoryCaptures/
 
 [Ll]ibrary/
 [Tt]emp/
