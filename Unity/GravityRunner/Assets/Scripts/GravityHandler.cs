@@ -5,6 +5,9 @@ using UnityEngine.UIElements;
 
 public class GravityHandler : MonoBehaviour
 {
+    float gravityStrength = 9.8f;
+
+    //normalized vectors storing directions relative to current gravity vector
     public Vector2 gravityDown;
     public Vector2 gravityUp;
     public Vector2 gravityLeft;
@@ -13,27 +16,39 @@ public class GravityHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Physics2D.gravity = new Vector2(0, 0);
     }
+
+
 
     // Update is called once per frame
     void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Physics2D.gravity = new Vector2(0, +gravityStrength);
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Physics2D.gravity = new Vector2(0, -gravityStrength);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            Physics2D.gravity = new Vector2(-gravityStrength, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            Physics2D.gravity = new Vector2(+gravityStrength, 0);
+        }
+    }
+
+    private void FixedUpdate()
     {
         gravityDown = Physics2D.gravity.normalized;
         gravityUp = -gravityDown;
         gravityLeft = new Vector2(gravityDown.y, gravityDown.x);
         gravityRight = -gravityLeft;
-
-        //rotate gravity 90° to the left
-        if (Input.GetKeyUp(KeyCode.Q))
-        {
-            Physics2D.gravity = rotate(Physics2D.gravity, -90);
-        }
-        //rotate gravity 90° to the right
-        else if (Input.GetKeyUp(KeyCode.E))
-        {
-            Physics2D.gravity = rotate(Physics2D.gravity, +90);
-        }
+        
     }
 
     public static Vector2 rotate(Vector2 vector, float angle)

@@ -32,22 +32,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Vector2.Angle(Vector2.up, gravityHandler.gravityUp);
-        transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.up, gravityHandler.gravityUp));
-
-        jumpVector = gravityHandler.gravityUp * jumpingForce;
-
-        int countCollisions = feet.OverlapCollider(contactFilter, feetCollisionResults);
-
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        if (Input.GetKeyDown(KeyCode.Space) && countCollisions > 1)
-        {
-            rb.AddForce(jumpVector, ForceMode2D.Impulse);
-        }
-
-        rb.AddForce(horizontalInput * runningSpeed * gravityHandler.gravityRight);
+        
+        transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.up, gravityHandler.gravityUp));        
 
     }
 }
