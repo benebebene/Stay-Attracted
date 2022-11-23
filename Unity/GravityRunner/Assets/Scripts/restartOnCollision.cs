@@ -10,7 +10,7 @@ public class restartOnCollision : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         else if (coll.gameObject.tag != "Player"){
-            print ("hi");
+            Destroy(coll.gameObject);
         }
     }
 }
