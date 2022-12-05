@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         
-        transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.up, gravityHandler.gravityUp));        
+        // transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.up, gravityHandler.gravityUp));        
 
     }
 }
