@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Portalscript : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class Portalscript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D coll){
         if (coll.gameObject.tag =="Player"){
             Debug.Log("Next level");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
+
         }
     }
 
