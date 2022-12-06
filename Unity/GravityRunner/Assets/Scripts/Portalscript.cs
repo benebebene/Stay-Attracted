@@ -19,7 +19,13 @@ public class Portalscript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D coll){
         if (coll.gameObject.tag =="Player"){
             Debug.Log("Next level");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (SceneManager.GetActiveScene().buildIndex == 0){
+                SceneManager.LoadScene("Level_2");
+            }
+            else {
+                SceneManager.LoadScene("Level_1");
+            }
+            
         
 
         }
