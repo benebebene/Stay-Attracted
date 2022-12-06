@@ -25,10 +25,6 @@ public class Portalscript : MonoBehaviour
             else {
                 SceneManager.LoadScene("Level_1");
             }
-            
-        
-
         }
     }
-
 }
