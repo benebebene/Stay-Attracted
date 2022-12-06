@@ -1349,7 +1349,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &525452491
 PrefabInstance:
@@ -2128,6 +2128,14 @@ PrefabInstance:
     - target: {fileID: 4005069948377055086, guid: d3af4fa6d1e058d42935881089f34229, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569496172362952901, guid: d3af4fa6d1e058d42935881089f34229, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569496172362952901, guid: d3af4fa6d1e058d42935881089f34229, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3af4fa6d1e058d42935881089f34229, type: 3}
