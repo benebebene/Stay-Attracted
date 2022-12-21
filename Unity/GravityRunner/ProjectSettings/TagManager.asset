@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Spike
   - Blob
+  - Robo
+  - Bat
   layers:
   - Default
   - TransparentFX

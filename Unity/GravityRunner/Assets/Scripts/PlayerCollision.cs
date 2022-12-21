@@ -8,7 +8,7 @@ public class PlayerCollision : MonoBehaviour
     public GameObject gameOverScreen;
 
     private void OnTriggerEnter2D(Collider2D coll){
-        if ((coll.gameObject.tag =="Spike") || (coll.gameObject.tag == "Blob")){
+        if ((coll.gameObject.tag =="Spike") || (coll.gameObject.tag == "Blob")  || (coll.gameObject.tag == "Robo")  || (coll.gameObject.tag == "Bat")){
             Time.timeScale = 0f;
             gameOverScreen.SetActive(true);
         }
