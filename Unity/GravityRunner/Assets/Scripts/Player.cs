@@ -1,16 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
-{
-    float runningSpeed = 6f;
-    float jumpingForce = 7f;
-    Vector2 jumpVector; 
+{ 
     Rigidbody2D rb;
-    BoxCollider2D feet;
-    BoxCollider2D[] feetCollisionResults = new BoxCollider2D[5];
-    ContactFilter2D contactFilter = new ContactFilter2D();
 
     GravityHandler gravityHandler;
 
@@ -18,10 +13,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        feet = transform.GetComponentInChildren<BoxCollider2D>();
         gravityHandler = GameObject.Find("GravityHandler").GetComponent<GravityHandler>();
-
-        jumpVector = Vector2.up * jumpingForce;
     }
 
     private void FixedUpdate()
@@ -29,11 +21,13 @@ public class Player : MonoBehaviour
         
     }
 
+    
+
     // Update is called once per frame
     void Update()
     {
-        
-        transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.up, gravityHandler.gravityUp));        
-
+        float gravityPlayerAngle = Vector2.SignedAngle(new Vector2(transform.up.x, transform.up.y), gravityHandler.gravityUp);
+        rb.angularVelocity = 2 * gravityPlayerAngle;
+        print(Vector2.SignedAngle(gravityHandler.gravityUp, new Vector2 (transform.up.x, transform.up.y)));
     }
 }
