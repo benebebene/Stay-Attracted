@@ -5,6 +5,11 @@ using UnityEngine.UIElements;
 
 public class GravityHandler : MonoBehaviour
 {
+
+    public AudioClip gravitySwitchSound;
+    public AudioSource source;
+    
+
     float gravityStrength = 9.8f;
 
     //normalized vectors storing directions relative to current gravity vector
@@ -13,10 +18,14 @@ public class GravityHandler : MonoBehaviour
     public Vector2 gravityLeft;
     public Vector2 gravityRight;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
         Physics2D.gravity = new Vector2(0, 0);
+        
+
     }
 
 
@@ -27,18 +36,26 @@ public class GravityHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Physics2D.gravity = new Vector2(0, +gravityStrength);
+            
+            source.PlayOneShot(gravitySwitchSound, 1);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Physics2D.gravity = new Vector2(0, -gravityStrength);
+            
+            source.PlayOneShot(gravitySwitchSound, 1);
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             Physics2D.gravity = new Vector2(-gravityStrength, 0);
+            
+            source.PlayOneShot(gravitySwitchSound, 1);
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             Physics2D.gravity = new Vector2(+gravityStrength, 0);
+            
+            source.PlayOneShot(gravitySwitchSound, 1);
         }
     }
 
