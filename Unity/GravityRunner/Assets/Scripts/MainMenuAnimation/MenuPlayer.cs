@@ -27,7 +27,7 @@ public class MenuPlayer : MonoBehaviour
     {
         float gravityPlayerAngle = Vector2.SignedAngle(new Vector2(transform.up.x, transform.up.y), menuGravity.gravityUp);
         rb.angularVelocity = 2 * gravityPlayerAngle;
-        print(Vector2.SignedAngle(menuGravity.gravityUp, new Vector2 (transform.up.x, transform.up.y)));
+        //print(Vector2.SignedAngle(menuGravity.gravityUp, new Vector2 (transform.up.x, transform.up.y)));
     }
 }
 
