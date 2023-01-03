@@ -24,6 +24,6 @@ public class Player : MonoBehaviour
     {
         float gravityPlayerAngle = Vector2.SignedAngle(new Vector2(transform.up.x, transform.up.y), gravityHandler.gravityUp);
         rb.angularVelocity = 2 * gravityPlayerAngle;
-        print(Vector2.SignedAngle(gravityHandler.gravityUp, new Vector2 (transform.up.x, transform.up.y)));
+        //print(Vector2.SignedAngle(gravityHandler.gravityUp, new Vector2 (transform.up.x, transform.up.y)));
     }
 }
