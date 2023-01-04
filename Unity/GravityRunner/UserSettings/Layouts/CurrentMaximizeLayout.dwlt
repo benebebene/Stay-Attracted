@@ -74,6 +74,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -724.5
+    m_HBaseRangeMax: 724.5
+    m_VBaseRangeMin: -359.5
+    m_VBaseRangeMax: 359.5
     m_HBaseRangeMin: -368
     m_HBaseRangeMax: 368
     m_VBaseRangeMin: -440.5
@@ -95,6 +99,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+      width: 1449
+      height: 719
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 724.5, y: 359.5}
       width: 736
       height: 881
     m_Scale: {x: 1, y: 1}
