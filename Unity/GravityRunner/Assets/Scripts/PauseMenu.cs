@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
 
     public KeyCode pauseKey = KeyCode.Escape;
+    public KeyCode restart = KeyCode.Space;
+    
 
     public static bool isPaused = false;
     // Start is called before the first frame update
@@ -29,6 +31,15 @@ public class PauseMenu : MonoBehaviour
             {
                 PauseGame();
             }
+        }
+
+        //restart on spacebar
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        if(Input.GetKeyDown(restart))
+        {
+            //Application.LoadLevel(currentScene);
+            SceneManager.LoadScene(currentScene);
+            ResumeGame();
         }
         
     }
