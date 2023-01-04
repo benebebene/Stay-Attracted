@@ -2013,6 +2013,10 @@ PrefabInstance:
       propertyPath: range
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7711344672843058827, guid: 64bce19f986412641940adab7ed2cc76, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8309729714872889287, guid: 64bce19f986412641940adab7ed2cc76, type: 3}
       propertyPath: m_Name
       value: Robo

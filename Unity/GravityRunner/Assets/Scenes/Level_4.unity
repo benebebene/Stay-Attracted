@@ -3010,6 +3010,10 @@ PrefabInstance:
       propertyPath: range
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7711344672843058827, guid: 64bce19f986412641940adab7ed2cc76, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8309729714872889287, guid: 64bce19f986412641940adab7ed2cc76, type: 3}
       propertyPath: m_Name
       value: Robo
@@ -3138,6 +3142,10 @@ PrefabInstance:
     - target: {fileID: -2799341568155936965, guid: a0619ae4f00937c4a8a6d591c620490c, type: 3}
       propertyPath: range
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032465212717982012, guid: a0619ae4f00937c4a8a6d591c620490c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3562169098736437556, guid: a0619ae4f00937c4a8a6d591c620490c, type: 3}
       propertyPath: m_RootOrder
