@@ -7,8 +7,8 @@ public class PlayerCollision : MonoBehaviour
 {
     public GameObject gameOverScreen;
 
-    private void OnCollisionEnter2D(Collision2D coll){
-        if ((coll.gameObject.tag =="Spike") || (coll.gameObject.tag == "Blob")){
+    private void OnTriggerEnter2D(Collider2D coll){
+        if ((coll.gameObject.tag =="Spike") || (coll.gameObject.tag == "Blob") || (coll.gameObject.tag == "Bat") || (coll.gameObject.tag == "Robo")){
             Time.timeScale = 0f;
             gameOverScreen.SetActive(true);
         }
@@ -18,6 +18,12 @@ public class PlayerCollision : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Exit()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 }
 

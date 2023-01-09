@@ -16,12 +16,8 @@ public class Player : MonoBehaviour
         gravityHandler = GameObject.Find("GravityHandler").GetComponent<GravityHandler>();
     }
 
-    private void FixedUpdate()
-    {
-        
-    }
+   
 
-    
 
     // Update is called once per frame
     void Update()
