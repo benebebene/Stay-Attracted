@@ -14,7 +14,7 @@ public class CollisionHandler
     {
         if (self.CompareTag("Player") && (other.CompareTag("Spike") || other.CompareTag("Blob")))
         {
-            LevelHandler.gameOver();
+            //LevelHandler.gameOver();
         }
     }
 
