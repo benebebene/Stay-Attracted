@@ -85,7 +85,7 @@ public class InGameUI : MonoBehaviour
             {
                 ResumeGame();
             }
-            else
+            else if (!isDead)
             {
                 PauseGame();
             }
