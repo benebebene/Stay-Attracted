@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8886923518599756306}
   - component: {fileID: 6986713561355080474}
   - component: {fileID: 6772843047847819801}
-  - component: {fileID: 3116842553614164062}
   m_Layer: 5
   m_Name: Button Container
   m_TagString: Untagged
@@ -75,20 +74,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &3116842553614164062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383545506841440905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 539f570349856ad45a71ef57d2e0eabf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 5437351164489196956}
-  pauseKey: 27
 --- !u!1 &449792005902647432
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +85,6 @@ GameObject:
   - component: {fileID: 3251613464933458351}
   - component: {fileID: 4302296875967754195}
   - component: {fileID: 6428729161349765015}
-  - component: {fileID: 3115319016640083985}
   m_Layer: 5
   m_Name: Button Container
   m_TagString: Untagged
@@ -164,19 +148,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &3115319016640083985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449792005902647432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e90b48ff1618bee44877b9aa581e1be9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverScreen: {fileID: 4047391674870828898}
 --- !u!1 &557448790708348900
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +161,7 @@ GameObject:
   - component: {fileID: 1675141037417700484}
   - component: {fileID: 2167288937694554199}
   m_Layer: 5
-  m_Name: Restart
+  m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -299,8 +270,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3116842553614164062}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 5714152298476190430}
+        m_TargetAssemblyTypeName: PlayerCollision, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
@@ -916,7 +887,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3115319016640083985}
+      - m_Target: {fileID: 5714152298476190430}
         m_TargetAssemblyTypeName: PlayerCollision, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -940,6 +911,7 @@ GameObject:
   - component: {fileID: 5437351163066207454}
   - component: {fileID: 5437351163066207455}
   - component: {fileID: 5437351163066207452}
+  - component: {fileID: 5714152298476190430}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1030,6 +1002,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5714152298476190430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5437351163066207453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90b48ff1618bee44877b9aa581e1be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 4047391674870828898}
+  pauseMenu: {fileID: 5437351164489196956}
+  pauseKey: 27
+  restart: 32
+  isDead: 0
 --- !u!1 &5437351163752742139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,9 +1354,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3116842553614164062}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 5714152298476190430}
+        m_TargetAssemblyTypeName: PlayerCollision, Assembly-CSharp
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1499,9 +1488,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3115319016640083985}
+      - m_Target: {fileID: 5714152298476190430}
         m_TargetAssemblyTypeName: PlayerCollision, Assembly-CSharp
-        m_MethodName: Exit
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
