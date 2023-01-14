@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7262389570006212936}
   - component: {fileID: 7262389570006212940}
   - component: {fileID: 7262389570006212941}
-  - component: {fileID: 7262389570006212942}
+  - component: {fileID: 3858796922130356871}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -253,7 +253,7 @@ PolygonCollider2D:
       - {x: 1.01, y: -2.4299998}
       - {x: 1.12, y: -2.4099998}
       - {x: 1.24, y: -2.3799999}
---- !u!114 &7262389570006212942
+--- !u!114 &3858796922130356871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,7 +262,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7262389570006212983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e90b48ff1618bee44877b9aa581e1be9, type: 3}
+  m_Script: {fileID: 11500000, guid: 732dd5b16ec2a55459330fd23f978402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverScreen: {fileID: 5987168304719485221, guid: 1f1350d8de71f31428cc75575139f27c, type: 3}

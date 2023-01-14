@@ -7,13 +7,13 @@ public class MenuPlayer : MonoBehaviour
 { 
     Rigidbody2D rb;
 
-    MenuGravity menuGravity;
+    public MenuGravity menuGravity;
 
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
-        menuGravity = GameObject.Find("MenuGravity").GetComponent<MenuGravity>();
     }
 
     private void FixedUpdate()
