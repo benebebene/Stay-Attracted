@@ -7,7 +7,7 @@ public class PlayerCollision : MonoBehaviour
 {
     public GameObject gameOverScreen;
 
-    private void OnTriggerEnter2D(Collider2D coll){
+    private void OnCollisionEnter2D(Collision2D coll){
         if ((coll.gameObject.tag =="Spike") || (coll.gameObject.tag == "Blob") || (coll.gameObject.tag == "Bat") || (coll.gameObject.tag == "Robo")){
             Time.timeScale = 0f;
             gameOverScreen.SetActive(true);
