@@ -27,6 +27,7 @@ public class InGameUI : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
+        PlayerInventory.numberShards = 0;
         PlayerCollision.playerDead = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
