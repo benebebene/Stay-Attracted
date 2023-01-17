@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class SpikeCollision : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D coll){
-        Destroy(coll.gameObject);
+        
+        if (coll.gameObject.tag != "Player")
+        {
+            Destroy(coll.gameObject);
+        }
     }
 }
