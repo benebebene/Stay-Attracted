@@ -1,0 +1,75 @@
+html
+{
+    height: 120%;
+}
+
+body
+{
+    height: 120%;
+    background: rgb(56,56,56);
+    background: linear-gradient(180deg, rgba(56,56,56,1) 0%, rgba(60,54,61,1) 60%, rgba(194,44,44,1) 100%);
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#box
+{
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+#story, #game, #trailer 
+{
+    display: inline-flex;
+    height: 75px;
+    width: 33%;
+}
+
+#story
+{
+    text-align: left;
+}
+
+#game
+{
+    text-align: center;
+}
+
+#trailer
+{
+    text-align: right;
+}
+
+#content
+{
+    display: block;
+    margin: auto;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 40px;
+}
+
+a:visited
+{
+    color: white;
+}
+
+a:focus 
+{
+    color: #b3edff;
+}

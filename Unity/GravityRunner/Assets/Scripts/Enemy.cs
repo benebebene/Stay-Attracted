@@ -76,11 +76,11 @@ public class Enemy : MonoBehaviour
 
     void moveLinear() 
     {
-        if (sign == 1 && (pos2 - projectXY(transform.position)).magnitude < 0.01)
+        if (sign == 1 && (pos2 - projectXY(transform.position)).magnitude < 0.05)
         {
             sign = -1;
         } 
-        else if (sign == -1 && (pos1 - projectXY(transform.position)).magnitude < 0.01)
+        else if (sign == -1 && (pos1 - projectXY(transform.position)).magnitude < 0.05)
         {
             sign = 1;
         }
