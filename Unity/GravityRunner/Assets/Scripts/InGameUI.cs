@@ -96,9 +96,7 @@ public class InGameUI : MonoBehaviour
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         if(Input.GetKeyDown(restart))
         {
-            //Application.LoadLevel(currentScene);
-            SceneManager.LoadScene(currentScene);
-            ResumeGame();
+            Restart();
         }
         
     }
