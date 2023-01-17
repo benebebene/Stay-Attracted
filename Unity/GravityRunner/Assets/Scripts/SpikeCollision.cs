@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SpikeCollision : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D coll){
+    private void OnCollisionEnter2D(Collision2D coll){
         
         if (coll.gameObject.tag != "Player")
         {
