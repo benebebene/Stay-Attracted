@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public int numberShards { get; private set; }
+    public static int numberShards { get; private set; }
 
-    public void ShardCollected(){
+    public static void ShardCollected(){
 
         numberShards++;
     }

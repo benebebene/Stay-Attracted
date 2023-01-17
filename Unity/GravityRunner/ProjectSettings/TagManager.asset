@@ -8,6 +8,7 @@ TagManager:
   - Blob
   - Bat
   - Robo
+  - PortalShard
   layers:
   - Default
   - TransparentFX

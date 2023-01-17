@@ -8,16 +8,20 @@ public class Portalscript : MonoBehaviour
 
     BoxCollider2D portalcollider;
 
+    [SerializeField]
+    private int maxNumberShards;
+
 
     // Start is called before the first frame update
     void Start()
     {
         portalcollider = GetComponent<BoxCollider2D>();
+        maxNumberShards = GameObject.FindGameObjectsWithTag("PortalShard").Length;
     }
 
 
     private void OnTriggerEnter2D(Collider2D coll){
-        if (coll.gameObject.tag =="Player"){
+        if (coll.gameObject.tag =="Player" && PlayerInventory.numberShards >= maxNumberShards){
             Debug.Log("Next level");
             Debug.Log(SceneManager.GetActiveScene().buildIndex);
 

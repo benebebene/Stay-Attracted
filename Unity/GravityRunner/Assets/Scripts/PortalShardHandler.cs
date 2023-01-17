@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PortalShardHandler : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other){
+    private void OnTriggerEnter2D(Collider2D other){
     
-        PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
+        if(other.gameObject.tag == "Player"){
 
-        if (playerInventory != null){
-            
-            playerInventory.ShardCollected();
+            PlayerInventory.ShardCollected();
             gameObject.SetActive(false);
-        }    
+
+        }
+
+          
     }
 }
 
