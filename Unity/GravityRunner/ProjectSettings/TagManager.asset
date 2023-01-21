@@ -9,6 +9,7 @@ TagManager:
   - Bat
   - Robo
   - PortalShard
+  - Wall
   layers:
   - Default
   - TransparentFX

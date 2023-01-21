@@ -14,6 +14,7 @@ public class InGameUI : MonoBehaviour
     
     public static bool isPaused = false;
     public bool isDead = false;
+    public bool introRunning = false;
 
     //----------------------------------------------------------------------------------------------------------------------
     // Game Over Screen Functions
@@ -27,6 +28,7 @@ public class InGameUI : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
+        Dialogue.restarted = true;
         PlayerInventory.numberShards = 0;
         PlayerCollision.playerDead = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -77,6 +79,8 @@ public class InGameUI : MonoBehaviour
         //Global Variable from the PlayerCollision-Script
         isDead = PlayerCollision.playerDead;
 
+        introRunning = Dialogue.introRunning;
+
         if (isDead == true){
             GameOver();
         }
@@ -86,7 +90,7 @@ public class InGameUI : MonoBehaviour
             {
                 ResumeGame();
             }
-            else if (!isDead)
+            else if (!isDead && !introRunning)
             {
                 PauseGame();
             }
@@ -94,7 +98,7 @@ public class InGameUI : MonoBehaviour
 
         //restart on spacebar
         int currentScene = SceneManager.GetActiveScene().buildIndex;
-        if(Input.GetKeyDown(restart))
+        if(Input.GetKeyDown(restart) && !introRunning)
         {
             Restart();
         }
