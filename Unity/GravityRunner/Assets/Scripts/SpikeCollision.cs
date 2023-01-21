@@ -7,7 +7,7 @@ public class SpikeCollision : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D coll){
         
-        if (coll.gameObject.tag != "Player" && coll.gameObject.tag != "PortalShard")
+        if (coll.gameObject.tag != "Player" && coll.gameObject.tag != "PortalShard" && coll.gameObject.tag != "Wall")
         {
             Destroy(coll.gameObject);
         }

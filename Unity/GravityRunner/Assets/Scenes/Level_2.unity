@@ -313,6 +313,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7365594544596825450, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
+      propertyPath: sceneToLoad
+      value: 
+      objectReference: {fileID: 102900000, guid: 2f40af3abae200e439185d05f6f1a033, type: 3}
     - target: {fileID: 7365594544918427725, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
       propertyPath: m_Name
       value: Portal Variant

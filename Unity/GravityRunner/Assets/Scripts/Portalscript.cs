@@ -11,6 +11,7 @@ public class Portalscript : MonoBehaviour
     [SerializeField]
     private int maxNumberShards;
 
+    public Object sceneToLoad;
 
     // Start is called before the first frame update
     void Start()
@@ -24,24 +25,24 @@ public class Portalscript : MonoBehaviour
         if (coll.gameObject.tag =="Player" && PlayerInventory.numberShards >= maxNumberShards){
             Debug.Log("Next level");
             Debug.Log(SceneManager.GetActiveScene().buildIndex);
-
-
-            // Load Level 1
-            if (SceneManager.GetActiveScene().buildIndex == 1){
-                SceneManager.LoadScene("Level_2");
-            }
-            // Load Level 2
-            if (SceneManager.GetActiveScene().buildIndex == 2){
-                SceneManager.LoadScene("Level_3");
-            }
-            // Load Level 3
-            if (SceneManager.GetActiveScene().buildIndex == 3){
-                SceneManager.LoadScene("Level_4");
-            }
-            // Load Level 4
-            if (SceneManager.GetActiveScene().buildIndex == 4){
-                SceneManager.LoadScene("MainMenu");
-            }
+            Dialogue.restarted = false;
+            SceneManager.LoadScene(sceneToLoad.name);
+            // // Load Level 1
+            // if (SceneManager.GetActiveScene().buildIndex == 1){
+            //     SceneManager.LoadScene("Level_2");
+            // }
+            // // Load Level 2
+            // if (SceneManager.GetActiveScene().buildIndex == 2){
+            //     SceneManager.LoadScene("Level_3");
+            // }
+            // // Load Level 3
+            // if (SceneManager.GetActiveScene().buildIndex == 3){
+            //     SceneManager.LoadScene("Level_4");
+            // }
+            // // Load Level 4
+            // if (SceneManager.GetActiveScene().buildIndex == 4){
+            //     SceneManager.LoadScene("MainMenu");
+            // }
         }
     }
 }
