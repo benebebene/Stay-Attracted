@@ -11,13 +11,52 @@ public class Portalscript : MonoBehaviour
     [SerializeField]
     private int maxNumberShards;
 
+    private float multFactor;
+    private int shards;
+
     public Object sceneToLoad;
+
+    public GameObject[] portals;
+    public GameObject[] psPortals;
+
 
     // Start is called before the first frame update
     void Start()
     {
         portalcollider = GetComponent<BoxCollider2D>();
         maxNumberShards = GameObject.FindGameObjectsWithTag("PortalShard").Length;
+        multFactor = ((100f / maxNumberShards) / 255f);
+        shards = PlayerInventory.numberShards;
+    }
+
+    void Update()
+    {
+        //New Shard got collected
+        if (PlayerInventory.numberShards > shards)
+        {
+            foreach(GameObject p in portals)
+            {
+                SpriteRenderer pRend = p.GetComponent<SpriteRenderer>();
+                pRend.color = new Color (pRend.color.r, pRend.color.g, pRend.color.b, pRend.color.a + multFactor);
+                
+            }
+            shards = PlayerInventory.numberShards;
+            Debug.Log(shards);
+
+        }
+
+        if (shards == maxNumberShards && shards > 0)
+        {
+            foreach(GameObject psp in psPortals)
+            {
+                var emission = psp.GetComponent<ParticleSystem>().emission;
+                emission.enabled = true;
+                
+            }
+            //Avoid Looping
+            shards = shards + 1;
+        }
+
     }
 
 

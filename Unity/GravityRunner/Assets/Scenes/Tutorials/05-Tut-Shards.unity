@@ -567,7 +567,7 @@ PrefabInstance:
       objectReference: {fileID: 2132030267}
     - target: {fileID: 6142556113143495883, guid: c5bf30351a7f23245b540b693fe21d0a, type: 3}
       propertyPath: lines.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6142556113143495883, guid: c5bf30351a7f23245b540b693fe21d0a, type: 3}
       propertyPath: lines.Array.data[0]
@@ -583,7 +583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142556113143495883, guid: c5bf30351a7f23245b540b693fe21d0a, type: 3}
       propertyPath: lines.Array.data[3]
-      value: 
+      value: The look of the portal will change when you collect shard
       objectReference: {fileID: 0}
     - target: {fileID: 6142556115039359832, guid: c5bf30351a7f23245b540b693fe21d0a, type: 3}
       propertyPath: m_text
