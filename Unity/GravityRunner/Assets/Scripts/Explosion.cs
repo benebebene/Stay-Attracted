@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class explosionScript : MonoBehaviour
+public class Explosion : MonoBehaviour
 {
 
     public float fieldOfImpact;
@@ -39,7 +39,6 @@ public class explosionScript : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        print("Drawing Gizmos!");
         Gizmos.color = new Color(1, 1, 0, 0.75F);
         Gizmos.DrawSphere(transform.position, fieldOfImpact);
     }

@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 7262389570006212940}
   - component: {fileID: 7262389570006212941}
   - component: {fileID: 3858796922130356871}
-  m_Layer: 0
+  - component: {fileID: 424123252}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -103,7 +104,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.6
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -265,3 +266,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732dd5b16ec2a55459330fd23f978402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &424123252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262389570006212983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f7995979360274591548792f5fbc65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldOfImpact: 5

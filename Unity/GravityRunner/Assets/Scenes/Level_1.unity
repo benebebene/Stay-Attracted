@@ -746,24 +746,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &424123238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7262389570006212983, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-  m_PrefabInstance: {fileID: 2014242935}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &424123245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424123238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c112d73fdf3ceb545975353045dc7d34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fieldOfImpact: 8.49
 --- !u!1 &432774161
 GameObject:
   m_ObjectHideFlags: 0
@@ -3396,11 +3378,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1803543961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4047391674870828898, guid: 4c68dcb2875f123488138c20cc338b96, type: 3}
-  m_PrefabInstance: {fileID: 458915900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1858403433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8097051394160910893, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
@@ -4011,14 +3988,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7262389570006212936, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: m_GravityScale
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262389570006212937, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4063,17 +4032,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7262389570006212942, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 1803543961}
     - target: {fileID: 7262389570006212983, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262389570006212983, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
