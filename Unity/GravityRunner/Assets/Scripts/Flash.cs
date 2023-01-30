@@ -18,7 +18,6 @@ public class Flash : MonoBehaviour
     void Start()
     {
         sprite = transform.gameObject;
-        Flashing();
     }
 
     public void Flashing()
