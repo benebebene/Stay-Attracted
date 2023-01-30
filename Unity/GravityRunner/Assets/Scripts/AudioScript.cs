@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class AudioScript : MonoBehaviour
 {
 
@@ -9,6 +8,7 @@ public class AudioScript : MonoBehaviour
     public static AudioScript Instance;
     public AudioSource source;
     public AudioClip soundtrack;
+    
 
 
 
@@ -29,4 +29,5 @@ public class AudioScript : MonoBehaviour
         source.loop = true;
         source.Play();
     }
+    
 }
