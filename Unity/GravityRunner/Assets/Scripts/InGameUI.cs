@@ -30,6 +30,7 @@ public class InGameUI : MonoBehaviour
         Time.timeScale = 1f;
         Dialogue.restarted = true;
         PlayerInventory.numberShards = 0;
+        PlayerInventory.IncreaseDeathCounter();
         PlayerCollision.playerDead = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
