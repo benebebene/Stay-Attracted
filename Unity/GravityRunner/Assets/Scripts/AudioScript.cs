@@ -8,7 +8,6 @@ public class AudioScript : MonoBehaviour
     public static AudioScript Instance;
     public AudioSource source;
     public AudioClip soundtrack;
-    
 
 
 
@@ -29,5 +28,4 @@ public class AudioScript : MonoBehaviour
         source.loop = true;
         source.Play();
     }
-    
 }

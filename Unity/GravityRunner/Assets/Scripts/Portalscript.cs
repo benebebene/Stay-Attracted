@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Portalscript : MonoBehaviour
 {
-
+    public AudioSource portalSound;
     BoxCollider2D portalcollider;
 
     [SerializeField]
@@ -58,10 +58,11 @@ public class Portalscript : MonoBehaviour
         }
 
     }
-
+    
 
     private void OnTriggerEnter2D(Collider2D coll){
         if (coll.gameObject.tag =="Player" && PlayerInventory.numberShards >= maxNumberShards){
+            portalSound.Play();
             Debug.Log("Next level");
             Debug.Log(SceneManager.GetActiveScene().buildIndex);
             Dialogue.restarted = false;

@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     public static int numberShards { get; set; }
+
     public static int numberExplosives { get; set; }
+
+    public static int deathCounter = 0;
 
     public static void ShardCollected()
     {
@@ -26,5 +29,10 @@ public class PlayerInventory : MonoBehaviour
         numberExplosives--;
         Debug.Log(numberExplosives);
     }
-
+  
+   
+    public static void IncreaseDeathCounter(){
+        deathCounter++;
+    }
 }
+

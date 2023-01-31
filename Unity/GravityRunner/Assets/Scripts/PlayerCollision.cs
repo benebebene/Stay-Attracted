@@ -10,6 +10,8 @@ public class PlayerCollision : MonoBehaviour
         if ((coll.gameObject.tag =="Enemy") || (coll.gameObject.tag == "Spike"))
         {
             playerDead = true;
+            PlayerInventory.IncreaseDeathCounter();
+            Debug.Log("DeathCounter:" + PlayerInventory.deathCounter);
             Time.timeScale = 0f;
         }
     }

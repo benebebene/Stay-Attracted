@@ -13,10 +13,13 @@ public class GravityHandler : MonoBehaviour
     public Vector2 gravityLeft;
     public Vector2 gravityRight;
 
+    SFX sfx;
+
     // Start is called before the first frame update
     void Start()
     {
         Physics2D.gravity = new Vector2(0, 0);
+       
     }
 
 
@@ -27,6 +30,7 @@ public class GravityHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) ||Input.GetKeyDown(KeyCode.W))
         {
             Physics2D.gravity = new Vector2(0, +gravityStrength);
+          
     
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) ||Input.GetKeyDown(KeyCode.S))
