@@ -30,7 +30,7 @@ public class explosionScript : MonoBehaviour
 
         foreach(Collider2D obj in objects){
             
-            if (obj.gameObject.tag == "Blob")
+            if (obj.gameObject.tag == "Blob" || obj.gameObject.tag == "Enemy")
             {
                 Flash flash = obj.GetComponent<Flash>();
                 flash.Flashing();
