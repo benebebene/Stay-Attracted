@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8097051394160910887}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Blob
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b306d6a8a3951294f97a033ab6f49121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementType: 1
+  movementType: 2
   pos1: {x: -3, y: -6}
   pos2: {x: 4, y: -6}
   velocity: 2
