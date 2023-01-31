@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosion : MonoBehaviour
+public class explosionScript : MonoBehaviour
 {
 
     public float fieldOfImpact;
@@ -32,14 +32,17 @@ public class Explosion : MonoBehaviour
             
             if (obj.gameObject.tag == "Blob")
             {
-                Destroy(obj.gameObject);
+                Flash flash = obj.GetComponent<Flash>();
+                flash.Flashing();
+                
             }
         }
     }
 
     void OnDrawGizmosSelected()
     {
+        print("Drawing Gizmos!");
         Gizmos.color = new Color(1, 1, 0, 0.75F);
-        Gizmos.DrawWireSphere(transform.position, fieldOfImpact);
+        Gizmos.DrawSphere(transform.position, fieldOfImpact);
     }
 }
