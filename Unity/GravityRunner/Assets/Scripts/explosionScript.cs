@@ -19,7 +19,13 @@ public class explosionScript : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.G)){
 
-            explode();
+            if (PlayerInventory.numberExplosives > 0)
+            {
+
+                PlayerInventory.ExplosiveUsed();
+                explode();
+            }
+            
         }
     }
 
