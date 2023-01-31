@@ -40,6 +40,6 @@ public class Explosion : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = new Color(1, 1, 0, 0.75F);
-        Gizmos.DrawSphere(transform.position, fieldOfImpact);
+        Gizmos.DrawWireSphere(transform.position, fieldOfImpact);
     }
 }
