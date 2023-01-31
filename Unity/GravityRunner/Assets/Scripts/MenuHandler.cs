@@ -14,7 +14,7 @@ public class MenuHandler : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("DefaultLevel");
     }
 
     public void StartTutorial()
