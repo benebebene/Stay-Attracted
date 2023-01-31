@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4987438787593603772}
   - component: {fileID: 7711344672843058827}
   - component: {fileID: 4354040667221506161}
-  - component: {fileID: 5771300379193695112}
   - component: {fileID: 174522788703042191}
+  - component: {fileID: 3905348562310318468}
+  - component: {fileID: 2328682389753083362}
   m_Layer: 0
   m_Name: Robo
   m_TagString: Enemy
@@ -108,20 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5771300379193695112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8309729714872889287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff64df85a2b586a40993227403e50d43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.8
-  range: 3
 --- !u!60 &174522788703042191
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -381,3 +368,31 @@ PolygonCollider2D:
       - {x: 1.6324325, y: -1.0567567}
       - {x: 1.6783785, y: -1.0513514}
       - {x: 1.7324325, y: -1.0405406}
+--- !u!114 &3905348562310318468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8309729714872889287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b306d6a8a3951294f97a033ab6f49121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementType: 2
+  pos1: {x: -2, y: 0}
+  pos2: {x: 2, y: 0}
+  velocity: 0
+--- !u!114 &2328682389753083362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8309729714872889287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707af5deeeb32104c922b94c56524f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
