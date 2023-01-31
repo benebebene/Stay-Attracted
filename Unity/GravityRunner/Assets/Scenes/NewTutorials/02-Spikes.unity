@@ -237,6 +237,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &231373227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8403541768219664821, guid: e63c62cf0e9af5c448c92dd2cdd7fb9b, type: 3}
+  m_PrefabInstance: {fileID: 8403541768759827834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &238332718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5083652873446621994, guid: efad6620db139c04b9e7d132d321781b, type: 3}
@@ -278,6 +283,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &363512879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7262389570006212983, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
+  m_PrefabInstance: {fileID: 2003532408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &432774161
 GameObject:
   m_ObjectHideFlags: 0
@@ -7098,6 +7108,147 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5083652873446621994, guid: efad6620db139c04b9e7d132d321781b, type: 3}
   m_PrefabInstance: {fileID: 2118380777}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &945728110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 363512879}
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: GravityHandler
+      value: 
+      objectReference: {fileID: 231373227}
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: lines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: Okay, that was very good
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: You will often encounter deadly spikes in the ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: Avoid them as they will kill you when you touch them
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: But be careful! Some of them are not attached to a wall!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: These will also be affected by your gravity switch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: Avoid the spikes and enter the Portal to Finish the Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018833, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_Name
+      value: NewTutorialCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093177018833, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600954093986357058, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
+      propertyPath: m_text
+      value: Avoid the Spikes and enter the portal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
 --- !u!1001 &1006328408
 PrefabInstance:
   m_ObjectHideFlags: 0

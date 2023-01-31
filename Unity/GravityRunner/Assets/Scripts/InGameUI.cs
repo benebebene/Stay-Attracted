@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class InGameUI : MonoBehaviour
 {
     public GameObject gameOverScreen;
 
     public GameObject pauseMenu;
+
+    public TextMeshProUGUI deathCounter;
 
     public KeyCode pauseKey = KeyCode.Escape;
     public KeyCode restart = KeyCode.Space;
@@ -84,6 +87,8 @@ public class InGameUI : MonoBehaviour
         isDead = PlayerCollision.playerDead;
 
         introRunning = Dialogue.introRunning;
+
+        deathCounter.text = (PlayerInventory.deathCounter).ToString();
 
         if (isDead == true){
             GameOver();
