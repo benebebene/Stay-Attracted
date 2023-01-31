@@ -27,6 +27,7 @@ public class GravityHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) ||Input.GetKeyDown(KeyCode.W))
         {
             Physics2D.gravity = new Vector2(0, +gravityStrength);
+    
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) ||Input.GetKeyDown(KeyCode.S))
         {
