@@ -292,6 +292,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f8703f1b27bd6dc408b056b6bd8fdfd2, type: 3}
+    - target: {fileID: 8097051394160910888, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8097051394160910889, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -379,6 +383,10 @@ PrefabInstance:
     - target: {fileID: 8097051394160910893, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
       propertyPath: m_Name
       value: Bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097051394160910893, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8097051394160910887, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
@@ -2135,6 +2143,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ad134e2c85e0b47e79456f230d48563d, type: 3}
+    - target: {fileID: 8097051394160910888, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8097051394160910889, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2222,6 +2234,10 @@ PrefabInstance:
     - target: {fileID: 8097051394160910893, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
       propertyPath: m_Name
       value: Robo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097051394160910893, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8097051394160910887, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
@@ -3354,11 +3370,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1803543961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4047391674870828898, guid: 4c68dcb2875f123488138c20cc338b96, type: 3}
-  m_PrefabInstance: {fileID: 458915900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1858403433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8097051394160910893, guid: ba24741b20bb5e347814135afaddeb7b, type: 3}
@@ -3969,10 +3980,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7262389570006212936, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: m_GravityScale
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4017,10 +4024,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7262389570006212942, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 1803543961}
     - target: {fileID: 7262389570006212983, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
       propertyPath: m_Name
       value: Player
