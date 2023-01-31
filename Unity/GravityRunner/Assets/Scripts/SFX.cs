@@ -30,4 +30,21 @@ public class SFX : MonoBehaviour
     public void playWarp_Change_4(){
         warp_change_4.Play ();
     }
+void Update()
+{
+    if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)){
+        playWarp_Change_1();
+    }
+    else if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)){
+        playWarp_Change_2();
+    }
+    else if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)){
+        playWarp_Change_3();
+    }
+    else if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)){
+        playWarp_Change_4();
+    }
 }
+}
+
+
