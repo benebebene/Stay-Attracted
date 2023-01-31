@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
+    public GameObject Blob;
+
     public GameObject Mission;
 
     public static bool introRunning = false;
@@ -48,18 +50,21 @@ public class Dialogue : MonoBehaviour
         {
             if (textComponent.text == lines[index])
             {
-            goOnText.SetActive(true);
+                Blob.GetComponent<Animator>().enabled = false;
+                goOnText.SetActive(true);
             }
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 if (textComponent.text == lines[index])
                 {
+                    Blob.GetComponent<Animator>().enabled = false;
                     NextLine();
                 }
                 else 
                 {
                     StopAllCoroutines();
                     textComponent.text = lines[index];
+                    Blob.GetComponent<Animator>().enabled = false;
                 }
             }   
         }
@@ -74,6 +79,7 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
+        Blob.GetComponent<Animator>().enabled = true;
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;

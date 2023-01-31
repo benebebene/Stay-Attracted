@@ -19,7 +19,7 @@ public class MenuHandler : MonoBehaviour
 
     public void StartTutorial()
     {
-        SceneManager.LoadScene("01-Tut-Gravity");
+        SceneManager.LoadScene("01-Gravity");
     }
 
     public void QuitGame()
