@@ -69,6 +69,7 @@ public class InGameUI : MonoBehaviour
             PlayerCollision.playerDead = false;
         }
         Time.timeScale = 1f;
+        PlayerInventory.deathCounter = 0;
         SceneManager.LoadScene("MainMenu");
     }
     
