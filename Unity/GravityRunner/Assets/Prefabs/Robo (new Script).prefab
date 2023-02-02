@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2328682389753083362}
   - component: {fileID: -6536871439297728092}
   m_Layer: 0
-  m_Name: Robo 1
+  m_Name: Robo (new Script)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

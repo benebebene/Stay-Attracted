@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 8097051394160910890}
   - component: {fileID: 8097051394160910887}
   - component: {fileID: 8608201435257218308}
+  - component: {fileID: 3258433400903357217}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy (new Script)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +96,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8097051394160910893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b306d6a8a3951294f97a033ab6f49121, type: 3}
   m_Name: 
@@ -292,3 +293,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707af5deeeb32104c922b94c56524f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3258433400903357217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8097051394160910893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7f0ebb7fc82784bbc889867f29b1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 0
+  pos2: {x: 0, y: 0}
+  velocity: 0
