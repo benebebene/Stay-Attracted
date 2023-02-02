@@ -411,4 +411,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveType: 2
   pos2: {x: 0, y: 0}
-  velocity: 0
+  velocity: 1
