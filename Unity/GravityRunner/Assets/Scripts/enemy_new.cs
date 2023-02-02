@@ -10,12 +10,13 @@ enum MoveType {
 
 public class enemy_new : MonoBehaviour
 {
+    /*
     internal Vector2 StartPos()
     {
         Vector2 pos1 = new Vector2(transform.position.x, transform.position.y);
         return pos1;
     }
-
+    */
     
     
     [SerializeField]
@@ -41,7 +42,8 @@ public class enemy_new : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         
-        start_pos = StartPos();
+        //start_pos = StartPos();
+        start_pos = new Vector2(transform.position.x, transform.position.y);
 
         switch(moveType) 
         {
