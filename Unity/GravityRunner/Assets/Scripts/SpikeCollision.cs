@@ -10,7 +10,7 @@ public class SpikeCollision : MonoBehaviour
     public AudioSource destroyed;
     private void OnCollisionEnter2D(Collision2D coll){
         
-        if (coll.gameObject.tag != "Player" && coll.gameObject.tag != "PortalShard" && coll.gameObject.tag != "Wall")
+        if (coll.gameObject.tag != "Player" && coll.gameObject.tag != "PortalShard" && coll.gameObject.tag != "Wall" && coll.gameObject.tag != "Spike")
         {
             Destroy(coll.gameObject);
             destroyed.Play();
