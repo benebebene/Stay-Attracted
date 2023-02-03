@@ -27,10 +27,17 @@ EditorUserSettings:
       value: 560305045d0450080f08097640275a4410164b7c7f7c72662b2c4e6ab6e66c61
       flags: 0
     RecentlyUsedSceneGuid-7:
+<<<<<<< Updated upstream
       value: 0657500451565f595d0c0d2042735c4442161d2b2e7b71332c2a1935b4b2626b
       flags: 0
     RecentlyUsedSceneGuid-8:
       value: 5a5303045c025b5f550f547546770b444f1640782d2b206828791b6ab2b23669
+=======
+      value: 0104070406025b03090a592441760844174f4b7a79702435792c4864b6b66760
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5205045e07540f0b5456547311700644454f4d7228297335797d4e6ae0b6676f
+>>>>>>> Stashed changes
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 5b0300075004585d0e0d0e26472708444e151a792d2a25632b711e65b5e66d68

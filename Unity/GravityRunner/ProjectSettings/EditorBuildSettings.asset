@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f89797f13284db84296fa149bcfc9751
   - enabled: 1
-    path: Assets/Scenes/DefaultLevel.unity
+    path: Assets/Scenes/NewLevels/Hung lvl.1.unity
     guid: efdb4c6b0bab20c44aeab37cacdf6263
   - enabled: 1
     path: Assets/Scenes/NewTutorials/01-Gravity.unity
