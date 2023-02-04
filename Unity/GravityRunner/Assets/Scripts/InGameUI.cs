@@ -10,6 +10,9 @@ public class InGameUI : MonoBehaviour
 
     public GameObject pauseMenu;
 
+    public GameObject[] flashes;
+    private int flashCount = 0;
+
     public TextMeshProUGUI deathCounter;
 
     public KeyCode pauseKey = KeyCode.Escape;
@@ -90,7 +93,20 @@ public class InGameUI : MonoBehaviour
 
         deathCounter.text = (PlayerInventory.deathCounter).ToString();
 
-        if (isDead == true){
+        //Display Flashes
+        if (PlayerInventory.numberExplosives > flashCount)
+        {   
+            flashes[flashCount].SetActive(true);
+            flashCount++;
+        }
+        if (PlayerInventory.numberExplosives < flashCount)
+        {
+            flashCount--;
+            flashes[flashCount].SetActive(false);
+        }
+
+        if (isDead == true)
+        {
             GameOver();
         }
         if (Input.GetKeyDown(pauseKey))
