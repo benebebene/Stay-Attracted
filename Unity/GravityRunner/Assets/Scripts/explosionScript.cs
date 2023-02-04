@@ -18,14 +18,15 @@ public class explosionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        explosionCircle.transform.position = transform.position;
+
         if(Input.GetKeyDown(KeyCode.G)){
 
             if (PlayerInventory.numberExplosives > 0)
             {
 
                 PlayerInventory.ExplosiveUsed();
-                explosionCircle.transform.position = transform.position;
+                
                 explosionCircle.SetActive(true);
                 explode();
                 Invoke("SetFalse", 0.7f);
