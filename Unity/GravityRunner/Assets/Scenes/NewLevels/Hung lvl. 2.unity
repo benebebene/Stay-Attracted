@@ -3836,6 +3836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeBoxAnimated
       objectReference: {fileID: 0}
+    - target: {fileID: 2762789141003518205, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
 --- !u!4 &1086436727 stripped
