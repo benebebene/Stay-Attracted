@@ -9086,6 +9086,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 659323135, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
+      propertyPath: explosionCircle
+      value: 
+      objectReference: {fileID: 8403541768759827836}
     - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -9774,5 +9778,10 @@ PrefabInstance:
 --- !u!1 &8403541768759827835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8403541768219664821, guid: e63c62cf0e9af5c448c92dd2cdd7fb9b, type: 3}
+  m_PrefabInstance: {fileID: 8403541768759827834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8403541768759827836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1495230479, guid: e63c62cf0e9af5c448c92dd2cdd7fb9b, type: 3}
   m_PrefabInstance: {fileID: 8403541768759827834}
   m_PrefabAsset: {fileID: 0}
