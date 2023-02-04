@@ -7,6 +7,8 @@ public class explosionScript : MonoBehaviour
 
     public float fieldOfImpact;
 
+    public GameObject explosionCircle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +25,18 @@ public class explosionScript : MonoBehaviour
             {
 
                 PlayerInventory.ExplosiveUsed();
+                explosionCircle.transform.position = transform.position;
+                explosionCircle.SetActive(true);
                 explode();
+                Invoke("SetFalse", 0.7f);
             }
             
         }
+    }
+
+    void SetFalse(){
+
+        explosionCircle.SetActive(false);
     }
 
     void explode()
