@@ -22,10 +22,9 @@ public class MenuHandler : MonoBehaviour
         SceneManager.LoadScene("01-Gravity");
     }
 
-    public void QuitGame()
+    public void LevelSelection()
     {
-        Application.Quit();
-        Debug.Log("Quit!");
+        SceneManager.LoadScene("LevelSelection");
     }
     
     
