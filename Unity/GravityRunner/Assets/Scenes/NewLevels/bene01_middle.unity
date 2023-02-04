@@ -6107,8 +6107,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7365594544596825450, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
       propertyPath: sceneToLoad
-      value: 
-      objectReference: {fileID: 102900000, guid: e3dd07739b8784dbcab09593b45bde59, type: 3}
+      value: DefaultLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 7365594544918427725, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
       propertyPath: m_Name
       value: PortalAnimated

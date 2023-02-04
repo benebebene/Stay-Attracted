@@ -4289,8 +4289,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7365594544596825450, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
       propertyPath: sceneToLoad
-      value: 
-      objectReference: {fileID: 102900000, guid: 824a511fccbd7d748bb3abc3f8c67f90, type: 3}
+      value: bene01_middle
+      objectReference: {fileID: 0}
     - target: {fileID: 7365594544918427725, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
       propertyPath: m_Name
       value: PortalAnimated
