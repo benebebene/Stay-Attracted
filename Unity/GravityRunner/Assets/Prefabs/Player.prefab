@@ -279,3 +279,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldOfImpact: 4
+  explosionCircle: {fileID: 0}
