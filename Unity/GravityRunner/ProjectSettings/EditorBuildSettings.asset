@@ -41,34 +41,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelection.unity
     guid: 644b2dd44c41681408e38e798326dc8a
-  - enabled: 0
-    path: Assets/Scenes/OldLevels/Level_1.unity
-    guid: cd3b6568e86840a4bb99003cc33a5dea
-  - enabled: 0
-    path: Assets/Scenes/OldLevels/Level_2.unity
-    guid: 3a08203f61ba65d4cba755332c9cd92e
-  - enabled: 0
-    path: Assets/Scenes/OldLevels/Level_3.unity
-    guid: 2f40af3abae200e439185d05f6f1a033
-  - enabled: 0
-    path: Assets/Scenes/OldLevels/Level_4.unity
-    guid: cdcc4f31a6481814592f8b94fd09479d
   - enabled: 1
-    path: Assets/Scenes/Tutorials/01-Tut-Gravity.unity
-    guid: 8c27c41147cbcb549b8037b55bd258fa
+    path: Assets/Scenes/NewLevels/bene01_middle.unity
+    guid: 824a511fccbd7d748bb3abc3f8c67f90
   - enabled: 1
-    path: Assets/Scenes/Tutorials/02-Tut-Spikes.unity
-    guid: 22af5d6ebee7bdf47a5fc4f438bc88b7
+    path: Assets/Scenes/NewLevels/bene02_easy.unity
+    guid: 705cac318d21a394bb49277a53a357dc
   - enabled: 1
-    path: Assets/Scenes/Tutorials/03-Tut-Blob.unity
-    guid: c95c68d3874c2d04789baafcb7b5b96a
+    path: Assets/Scenes/NewLevels/bene03_easy.unity
+    guid: 08ce8848dff76de4bb07d2f8ea5edd48
   - enabled: 1
-    path: Assets/Scenes/Tutorials/04-Tut-RoboBat.unity
-    guid: 42e1daada8aadc148aa949140775bf1a
+    path: Assets/Scenes/NewLevels/bene04_hard.unity
+    guid: 93310f973d84e0e4bae9327085ab58f0
   - enabled: 1
-    path: Assets/Scenes/Tutorials/05-Tut-Shards.unity
-    guid: 5f43712b33fedfd4197cd40dcf3461d4
+    path: Assets/Scenes/NewLevels/DefaultLevel.unity
+    guid: e3dd07739b8784dbcab09593b45bde59
   - enabled: 1
-    path: Assets/Scenes/Tutorials/06-Tut-Ending.unity
-    guid: 74fc45e3bf512384091a04f6d253b5f3
+    path: Assets/Scenes/NewLevels/Hung lvl. 2.unity
+    guid: 1408baf09881a3943858da5e4439b637
+  - enabled: 1
+    path: Assets/Scenes/NewLevels/LukasLevel.unity
+    guid: 84a0fefb73d7df14bb5ef0018942f52d
+  - enabled: 1
+    path: Assets/Scenes/NewLevels/MatthiasLevelEasy.unity
+    guid: 9b7b972d8a8764449a82acf8e0f902b1
   m_configObjects: {}

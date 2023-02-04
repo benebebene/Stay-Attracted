@@ -66,6 +66,7 @@ public class Portalscript : MonoBehaviour
             Debug.Log("Next level");
             Debug.Log(SceneManager.GetActiveScene().buildIndex);
             Dialogue.restarted = false;
+            MenuHandler.playGameSceneName = sceneToLoad.name;
             SceneManager.LoadScene(sceneToLoad.name);
             // // Load Level 1
             // if (SceneManager.GetActiveScene().buildIndex == 1){

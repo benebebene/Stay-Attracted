@@ -11,10 +11,11 @@ public class MenuHandler : MonoBehaviour
     //--------------------------------------------
     //MAIN MENU GUI
     //--------------------------------------------
+    public static string playGameSceneName = "bene02_easy";
 
     public void StartGame()
     {
-        SceneManager.LoadScene("DefaultLevel");
+        SceneManager.LoadScene(playGameSceneName);
     }
 
     public void StartTutorial()
