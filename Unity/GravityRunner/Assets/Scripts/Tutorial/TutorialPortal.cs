@@ -8,7 +8,7 @@ public class TutorialPortal : MonoBehaviour
     public AudioSource portalSound;
     BoxCollider2D portalcollider;
 
-    public Object sceneToLoad;
+    public string sceneToLoad;
 
     public GameObject[] portals;
     public GameObject[] psPortals;
@@ -52,7 +52,7 @@ public class TutorialPortal : MonoBehaviour
             Debug.Log("Next level");
             Debug.Log(SceneManager.GetActiveScene().buildIndex);
             Dialogue.restarted = false;
-            SceneManager.LoadScene(sceneToLoad.name);
+            SceneManager.LoadScene(sceneToLoad);
             // // Load Level 1
             // if (SceneManager.GetActiveScene().buildIndex == 1){
             //     SceneManager.LoadScene("Level_2");

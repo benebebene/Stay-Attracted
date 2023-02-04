@@ -7076,8 +7076,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7365594544596825450, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
       propertyPath: sceneToLoad
-      value: 
-      objectReference: {fileID: 102900000, guid: b5a2ac55bd8cab444a008f66b0cd0327, type: 3}
+      value: 07-End
+      objectReference: {fileID: 0}
     - target: {fileID: 7365594544918427725, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
       propertyPath: m_Name
       value: PortalAnimated

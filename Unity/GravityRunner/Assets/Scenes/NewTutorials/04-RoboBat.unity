@@ -8877,8 +8877,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1521536663937213318, guid: d3af4fa6d1e058d42935881089f34229, type: 3}
       propertyPath: sceneToLoad
-      value: 
-      objectReference: {fileID: 102900000, guid: 5a99f87ed61ee3246a8ed1ef50cf7190, type: 3}
+      value: 05-Bomb
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3af4fa6d1e058d42935881089f34229, type: 3}
 --- !u!4 &1828336618 stripped

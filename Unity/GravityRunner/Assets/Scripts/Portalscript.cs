@@ -14,7 +14,7 @@ public class Portalscript : MonoBehaviour
     private float multFactor;
     private int shards;
 
-    public Object sceneToLoad;
+    public string sceneToLoad;
 
     public GameObject[] portals;
     public GameObject[] psPortals;
@@ -66,8 +66,8 @@ public class Portalscript : MonoBehaviour
             Debug.Log("Next level");
             Debug.Log(SceneManager.GetActiveScene().buildIndex);
             Dialogue.restarted = false;
-            MenuHandler.playGameSceneName = sceneToLoad.name;
-            SceneManager.LoadScene(sceneToLoad.name);
+            MenuHandler.playGameSceneName = sceneToLoad;
+            SceneManager.LoadScene(sceneToLoad);
             // // Load Level 1
             // if (SceneManager.GetActiveScene().buildIndex == 1){
             //     SceneManager.LoadScene("Level_2");

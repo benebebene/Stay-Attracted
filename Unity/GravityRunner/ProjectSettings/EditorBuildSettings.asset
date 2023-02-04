@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f89797f13284db84296fa149bcfc9751
   - enabled: 1
-    path: Assets/Scenes/NewLevels/Hung lvl.1.unity
-    guid: efdb4c6b0bab20c44aeab37cacdf6263
-  - enabled: 1
     path: Assets/Scenes/NewTutorials/01-Gravity.unity
     guid: f55afb8dcd4bd734fbcf6e9635989191
   - enabled: 1
@@ -56,6 +53,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewLevels/DefaultLevel.unity
     guid: e3dd07739b8784dbcab09593b45bde59
+  - enabled: 1
+    path: Assets/Scenes/NewLevels/Hung lvl.1.unity
+    guid: efdb4c6b0bab20c44aeab37cacdf6263
   - enabled: 1
     path: Assets/Scenes/NewLevels/Hung lvl. 2.unity
     guid: 1408baf09881a3943858da5e4439b637
