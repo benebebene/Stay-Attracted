@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public static bool playerDead = false;
-
+    public AudioSource dying_sound;
+    public AudioSource collect_sound;
     private void OnCollisionEnter2D(Collision2D coll){
         if ((coll.gameObject.tag =="Enemy") || (coll.gameObject.tag == "Spike"))
         {
@@ -13,6 +14,10 @@ public class PlayerCollision : MonoBehaviour
             PlayerInventory.IncreaseDeathCounter();
             Debug.Log("DeathCounter:" + PlayerInventory.deathCounter);
             Time.timeScale = 0f;
+            dying_sound.Play();
+        }
+        if ((coll.gameObject.tag == "PortalShard")){
+            collect_sound.Play();
         }
     }
 

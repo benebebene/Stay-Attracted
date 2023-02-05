@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PortalShardHandler : MonoBehaviour
 {
+
+    public AudioSource collected;
     void Start()
     {
         PlayerInventory.numberShards = 0;

@@ -4367,6 +4367,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8097051394160910889, guid: e416d0ad2178bab48a42ef4901d729e0, type: 3}
   m_PrefabInstance: {fileID: 41582545}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1048161172 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7365594544799469412, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
+  m_PrefabInstance: {fileID: 1271834495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1051614461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4555,6 +4560,14 @@ PrefabInstance:
     - target: {fileID: 2769618205148051735, guid: 49788ca2a6925be4790949007fab20cc, type: 3}
       propertyPath: m_Name
       value: PortalShard (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080567867692672927, guid: 49788ca2a6925be4790949007fab20cc, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080567867692672927, guid: 49788ca2a6925be4790949007fab20cc, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49788ca2a6925be4790949007fab20cc, type: 3}
@@ -6159,6 +6172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b46ac80a2f579f44b9a3a5162104521, type: 3}
+--- !u!1 &1304428898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1495230479, guid: e63c62cf0e9af5c448c92dd2cdd7fb9b, type: 3}
+  m_PrefabInstance: {fileID: 8403541768759827834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1330478540
 GameObject:
   m_ObjectHideFlags: 0
@@ -6170,7 +6188,7 @@ GameObject:
   - component: {fileID: 1330478541}
   m_Layer: 0
   m_Name: PortalShards
-  m_TagString: Untagged
+  m_TagString: PortalShard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6315,6 +6333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49788ca2a6925be4790949007fab20cc, type: 3}
+--- !u!82 &1425708827 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9080567867692672927, guid: 49788ca2a6925be4790949007fab20cc, type: 3}
+  m_PrefabInstance: {fileID: 1268823671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1540828193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4987438787593603772, guid: 2c3938eacbb44d54897be245f9afb921, type: 3}
@@ -7266,21 +7289,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 659323135, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
+      propertyPath: explosionCircle
+      value: 
+      objectReference: {fileID: 1304428898}
+    - target: {fileID: 3858796922130356871, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
+      propertyPath: dying_sound
+      value: 
+      objectReference: {fileID: 1048161172}
+    - target: {fileID: 3858796922130356871, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
+      propertyPath: collect_sound
+      value: 
+      objectReference: {fileID: 1425708827}
     - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7322,9 +7345,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7262389570006212938, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
+    - target: {fileID: 7262389570006212941, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7262389570006212983, guid: 22f667a30eafc4b4b80eee11b9b8de66, type: 3}
       propertyPath: m_Name
