@@ -4095,6 +4095,98 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeBoxAnimated
       objectReference: {fileID: 0}
+    - target: {fileID: 2762789139005248523, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789139307532547, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789139631165884, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789139655912506, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789139692922088, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789139705835999, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789139820509393, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789139876666118, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140063689825, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140142324826, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140143332953, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140156270085, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140193026827, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140196351079, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140590756752, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140643653270, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140698941336, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140711647508, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140718226390, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140721359473, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140836977794, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140856423172, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762789140868786857, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2762789141003518205, guid: 2664d75fd43adc54b847a89a91a16e5e, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -5900,7 +5992,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.100000024, y: 0.5, z: 0}
   m_MaxChunkCount: 16
