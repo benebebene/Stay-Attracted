@@ -10,9 +10,11 @@ public class PlayerInventory : MonoBehaviour
 
     public static int deathCounter = 0;
 
+
+
     public static void ShardCollected()
     {
-
+ 
         numberShards++;
     }
 

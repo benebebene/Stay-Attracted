@@ -15,16 +15,19 @@ public class MenuHandler : MonoBehaviour
 
     public void StartGame()
     {
+      
         SceneManager.LoadScene(playGameSceneName);
     }
 
     public void StartTutorial()
     {
+     
         SceneManager.LoadScene("01-Gravity");
     }
 
     public void LevelSelection()
     {
+
         SceneManager.LoadScene("LevelSelection");
     }
     
