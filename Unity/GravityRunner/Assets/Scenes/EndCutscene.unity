@@ -187,7 +187,7 @@ PrefabInstance:
       objectReference: {fileID: 173337488}
     - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
       propertyPath: lines.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
       propertyPath: lines.Array.data[0]
@@ -203,11 +203,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
       propertyPath: lines.Array.data[3]
-      value: now we can continue exploring the galaxy :-)
+      value: now we can continue exploring the galaxy
       objectReference: {fileID: 0}
     - target: {fileID: 2600954093164228817, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
       propertyPath: lines.Array.data[4]
-      value: 
+      value: GaLigrue :-)
       objectReference: {fileID: 0}
     - target: {fileID: 2600954093177018794, guid: c9479163601a3984381f5a4a1a76f349, type: 3}
       propertyPath: m_Pivot.x

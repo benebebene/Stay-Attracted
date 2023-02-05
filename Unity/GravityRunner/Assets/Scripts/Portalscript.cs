@@ -66,8 +66,11 @@ public class Portalscript : MonoBehaviour
             Debug.Log("Next level");
             Debug.Log(SceneManager.GetActiveScene().buildIndex);
             Dialogue.restarted = false;
-            if(!sceneToLoad.Contains("Tut")){
+            if(!sceneToLoad.Contains("Tut") && !(sceneToLoad == "MainMenu")){
                 MenuHandler.playGameSceneName = sceneToLoad;
+            }
+            if (sceneToLoad == "EndCutscene"){
+                MenuHandler.playGameSceneName = "bene02_easy";
             }
             SceneManager.LoadScene(sceneToLoad);
             // // Load Level 1
