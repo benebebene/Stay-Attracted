@@ -8769,7 +8769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portalSound: {fileID: 36360251073484629}
-  sceneToLoad: 06-Sharda
+  sceneToLoad: 06-Shards
   portals:
   - {fileID: 36360251947199838}
   - {fileID: 36360251877519417}
