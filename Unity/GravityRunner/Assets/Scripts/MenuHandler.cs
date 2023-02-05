@@ -20,7 +20,7 @@ public class MenuHandler : MonoBehaviour
 
     public void StartTutorial()
     {
-        SceneManager.LoadScene("01-Gravity");
+        SceneManager.LoadScene("01-Gravity-Tut");
     }
 
     public void LevelSelection()
