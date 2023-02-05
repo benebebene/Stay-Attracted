@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewLevels/MatthiasLevelEasy.unity
     guid: 9b7b972d8a8764449a82acf8e0f902b1
+  - enabled: 1
+    path: Assets/Scenes/EndCutscene.unity
+    guid: 023fa9c9540fc0948b360f78710de34f
   m_configObjects: {}
