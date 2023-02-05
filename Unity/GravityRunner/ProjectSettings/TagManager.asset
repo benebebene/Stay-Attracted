@@ -11,6 +11,7 @@ TagManager:
   - PortalShard
   - Wall
   - Enemy
+  - PowerUp
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - UI
   - Enemies
   - 
-  - 
+  - test
   - 
   - 
   - 
