@@ -15,7 +15,9 @@ public class InGameUI : MonoBehaviour
 
     public TextMeshProUGUI deathCounter;
 
-    public KeyCode pauseKey = KeyCode.Escape;
+    public KeyCode pauseKey1 = KeyCode.Escape;
+    public KeyCode pauseKey2 = KeyCode.Q;
+    
     public KeyCode restart = KeyCode.Space;
     
     public static bool isPaused = false;
@@ -109,7 +111,7 @@ public class InGameUI : MonoBehaviour
         {
             GameOver();
         }
-        if (Input.GetKeyDown(pauseKey))
+        if (Input.GetKeyDown(pauseKey1) || Input.GetKeyDown(pauseKey2))
         {
             if (isPaused)
             {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -103,6 +104,10 @@ public class Dialogue : MonoBehaviour
             introRunning = false;
             Player.SetActive(true);
             GravityHandler.GetComponent<GravityHandler>().enabled = true;
+            if(SceneManager.GetActiveScene().name == "EndCutscene")
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
             
         }
     }
