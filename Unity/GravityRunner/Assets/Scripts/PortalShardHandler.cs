@@ -9,6 +9,7 @@ public class PortalShardHandler : MonoBehaviour
     void Start()
     {
         PlayerInventory.numberShards = 0;
+        PlayerInventory.numberExplosives = 0;
     }    
     private void OnTriggerEnter2D(Collider2D other){
     
