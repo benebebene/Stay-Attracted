@@ -51,7 +51,7 @@ EditorBuildSettings:
     path: Assets/Scenes/NewLevels/bene04_hard.unity
     guid: 93310f973d84e0e4bae9327085ab58f0
   - enabled: 1
-    path: Assets/Scenes/NewLevels/DefaultLevel.unity
+    path: Assets/Scenes/NewLevels/julianHard.unity
     guid: e3dd07739b8784dbcab09593b45bde59
   - enabled: 1
     path: Assets/Scenes/NewLevels/Hung lvl.1.unity
