@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PortalShardHandler : MonoBehaviour
 {
+
+    public AudioSource collected;
     void Start()
     {
         PlayerInventory.numberShards = 0;
@@ -11,7 +13,7 @@ public class PortalShardHandler : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
     
         if(other.gameObject.tag == "Player"){
-            
+            collected.Play();
             PlayerInventory.ShardCollected();
             gameObject.SetActive(false);
 
