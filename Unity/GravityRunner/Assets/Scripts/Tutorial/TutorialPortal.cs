@@ -26,7 +26,6 @@ public class TutorialPortal : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(GameObject.Find("Enemy") == null);
         if (GameObject.Find("Enemy") == null && !portalAnimated)
         {
             foreach(GameObject p in portals)
@@ -50,8 +49,9 @@ public class TutorialPortal : MonoBehaviour
         if (coll.gameObject.tag =="Player" && blobDead){
             portalSound.Play();
             Debug.Log("Next level");
-            Debug.Log(SceneManager.GetActiveScene().buildIndex);
+            //Debug.Log(SceneManager.GetActiveScene().buildIndex);
             Dialogue.restarted = false;
+            Debug.Log( MenuHandler.playGameSceneName);
             SceneManager.LoadScene(sceneToLoad);
             // // Load Level 1
             // if (SceneManager.GetActiveScene().buildIndex == 1){

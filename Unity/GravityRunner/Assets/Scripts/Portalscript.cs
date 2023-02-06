@@ -64,7 +64,7 @@ public class Portalscript : MonoBehaviour
         if (coll.gameObject.tag =="Player" && PlayerInventory.numberShards >= maxNumberShards){
             portalSound.Play();
             Debug.Log("Next level");
-            Debug.Log(SceneManager.GetActiveScene().buildIndex);
+            //Debug.Log(SceneManager.GetActiveScene().buildIndex);
             Dialogue.restarted = false;
             if(!sceneToLoad.Contains("Tut") && !(sceneToLoad == "MainMenu")){
                 MenuHandler.playGameSceneName = sceneToLoad;
@@ -72,6 +72,7 @@ public class Portalscript : MonoBehaviour
             if (sceneToLoad == "EndCutscene"){
                 MenuHandler.playGameSceneName = "bene02_easy";
             }
+            Debug.Log( MenuHandler.playGameSceneName);
             SceneManager.LoadScene(sceneToLoad);
             // // Load Level 1
             // if (SceneManager.GetActiveScene().buildIndex == 1){

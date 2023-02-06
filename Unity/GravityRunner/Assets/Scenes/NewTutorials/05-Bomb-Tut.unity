@@ -8752,7 +8752,6 @@ GameObject:
   - component: {fileID: 36360251947199834}
   - component: {fileID: 36360251947199832}
   - component: {fileID: 36360251947199839}
-  - component: {fileID: 36360251947199840}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -8781,23 +8780,6 @@ MonoBehaviour:
   psPortals:
   - {fileID: 7401371603760691263}
   - {fileID: 7401371602169555676}
---- !u!114 &36360251947199840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36360251947199838}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c31a340f859e7c4699d0094fddb33c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portalSound: {fileID: 0}
-  maxNumberShards: 0
-  sceneToLoad: 06-Shards
-  portals: []
-  psPortals: []
 --- !u!4 &36360252220798004
 Transform:
   m_ObjectHideFlags: 0

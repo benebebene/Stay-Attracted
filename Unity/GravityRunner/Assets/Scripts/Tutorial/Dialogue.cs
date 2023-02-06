@@ -46,7 +46,6 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(restarted);
         if (introRunning && !restarted)
         {
             if (textComponent.text == lines[index])
