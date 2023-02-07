@@ -1,9 +1,7 @@
 $(document).ready(function()
 {
-    var story = `<br><img src="static/img/start_screen.png">`  ;
-
     var game = `<div id="unity-container" class="unity-desktop">
-    <canvas id="unity-canvas" width=960 height=600></canvas>
+    <canvas id="unity-canvas" width=1067 height=600></canvas>
     <div id="unity-loading-bar">
       <div id="unity-logo"></div>
       <div id="unity-progress-bar-empty">
@@ -56,8 +54,8 @@ $(document).ready(function()
       frameworkUrl: buildUrl + "/Unity.framework.js.gz",
       codeUrl: buildUrl + "/Unity.wasm.gz",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "DefaultCompany",
-      productName: "GravityRunner",
+      companyName: "Stay Attracted Studios",
+      productName: "Gravity Shift",
       productVersion: "1.0",
       showBanner: unityShowBanner,
     };
@@ -87,7 +85,7 @@ $(document).ready(function()
     } else {
       // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-      canvas.style.width = "960px";
+      canvas.style.width = "1067px";
       canvas.style.height = "600px";
     }
 
@@ -110,21 +108,9 @@ $(document).ready(function()
     document.body.appendChild(script);
   </script>`;
 
-  var trailer = `<br><iframe width="866" height="487" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-
-  $("#story_link").click(function()
-  {
-      $("#content").html(story);
-  });
-
   $("#game_link").click(function()
   {
       $("#content").html(game);
-  });
-
-  $("#trailer_link").click(function()
-  {
-      $("#content").html(trailer);
   });
 
 });

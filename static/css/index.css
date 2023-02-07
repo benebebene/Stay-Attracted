@@ -1,0 +1,99 @@
+body
+{
+    height: 90%;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.space_background
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: -10vw 29vh 3px 0px white,-1vw 23vh 1px 0px #ffd1fa,-42vw -25vh 3px 1px #f0ffd1,19vw -24vh 0px 3px white,-39vw 33vh 0px 1px #ffd1fa,-10vw -33vh 3px 2px white,-22vw -24vh 0px 2px white,-3vw -28vh 0px 3px white,26vw -41vh 1px 3px #d1ffdb,21vw 38vh 2px 1px #f0ffd1,-34vw -47vh 0px 3px white,-21vw 37vh 2px 0px #ffd1fa,26vw 18vh 3px 0px white,4vw 48vh 2px 1px #ffd1fa,42vw 21vh 2px 2px #ffd1fa,34vw 35vh 2px 1px white,-22vw 4vh 0px 3px white,-1vw 19vh 1px 3px #ffd1fa,11vw -15vh 0px 3px #ebd1ff,30vw 49vh 0px 1px #ffd1fa,29vw 42vh 3px 1px white,-29vw 14vh 0px 1px #fff4b5,9vw -40vh 1px 3px #f0ffd1,-37vw 9vh 2px 3px #ebd1ff,11vw -13vh 3px 3px #ffd5d1,-2vw -27vh 2px 3px #fff4b5,-48vw 39vh 3px 2px #fff4b5,35vw -19vh 1px 1px white,-43vw 50vh 0px 0px #fff4b5,-49vw -42vh 0px 1px white,-43vw -45vh 1px 2px #ebd1ff,-26vw 46vh 1px 2px white,27vw -14vh 1px 2px #fff4b5,37vw 33vh 2px 2px #fff4b5,8vw -12vh 2px 3px #d1f4ff,-5vw 13vh 3px 3px white,28vw -13vh 1px 1px #ffd1fa,44vw -40vh 2px 3px white,-33vw -44vh 2px 2px white,-37vw 45vh 2px 3px white,50vw -18vh 1px 0px #f0ffd1,-48vw -49vh 0px 2px #ffd5d1,30vw 21vh 0px 1px white,23vw -26vh 0px 3px white,49vw -44vh 1px 3px #d1f4ff,29vw -13vh 1px 1px #ebd1ff,38vw 37vh 1px 0px white,46vw -12vh 0px 1px white,18vw -4vh 0px 3px white,-39vw -27vh 0px 0px white,49vw -34vh 2px 1px #fff4b5,-16vw 30vh 1px 0px #fff4b5,45vw -19vh 2px 0px white,34vw 10vh 3px 2px #ffd5d1,-16vw -7vh 1px 0px white,4vw -9vh 2px 0px white,-13vw 27vh 2px 0px white,-9vw -20vh 3px 3px #ffd5d1,38vw -39vh 3px 2px #d1f4ff,39vw 36vh 0px 2px #ffd5d1,2vw -40vh 2px 3px #f0ffd1,5vw 8vh 1px 2px white,10vw -38vh 3px 3px white,-12vw -23vh 2px 0px #f0ffd1,22vw -36vh 2px 3px #f0ffd1,10vw 5vh 2px 2px #f0ffd1,-3vw -38vh 3px 1px #d1f4ff,-17vw -29vh 1px 0px #ffd1fa,26vw -32vh 0px 0px white,37vw -41vh 2px 2px white,1vw 25vh 2px 2px white,-10vw -37vh 1px 0px #d1f4ff,-19vw -27vh 3px 2px #ebd1ff,-12vw -14vh 2px 3px white,44vw 33vh 1px 1px #d1f4ff,15vw 3vh 3px 0px white,-50vw 0vh 1px 0px white,11vw -45vh 1px 1px #f0ffd1,22vw -39vh 0px 2px white,49vw 40vh 1px 1px white,-4vw -44vh 0px 3px white,-29vw 0vh 1px 1px #ffd5d1,-29vw 38vh 0px 1px white,27vw 38vh 1px 1px white,31vw 29vh 1px 3px white,32vw -41vh 2px 3px white,-5vw 30vh 0px 1px #d1f4ff,12vw 31vh 2px 0px #ebd1ff,-17vw 35vh 2px 2px white,10vw -39vh 3px 0px #d1ffdb,0vw 16vh 3px 0px white,10vw 41vh 0px 0px #d1f4ff,-20vw 15vh 1px 0px white,-6vw 25vh 2px 3px #d1f4ff,-43vw 43vh 2px 1px white,-23vw 14vh 2px 3px #ebd1ff,28vw 10vh 3px 2px white,8vw 48vh 1px 2px #ebd1ff,25vw -1vh 1px 1px #ffd1fa,-40vw -49vh 0px 1px #fff4b5;
+    animation: zoom 75s alternate infinite;
+}
+
+@keyframes zoom
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(1.5);
+    }
+}
+
+#box
+{
+    min-height: 750px;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    margin-top: 2.5%;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+
+img
+{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+#story, #game, #trailer 
+{
+    display: inline-flex;
+    height: 75px;
+    width: 33%;
+}
+
+#story
+{
+    text-align: left;
+}
+
+#game
+{
+    float: right;
+    text-align: right;
+}
+
+#trailer
+{
+    text-align: right;
+}
+
+#content
+{
+    display: block;
+    margin: auto;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 40px;
+}
+
+a:visited
+{
+    color: white;
+}
+
+a:focus 
+{
+    color: #b3edff;
+}
